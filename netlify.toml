@@ -1,0 +1,6 @@
+
+
+[[redirects]]
+from="_next/image*"
+to="/.netlify/functions/image"
+status=200
