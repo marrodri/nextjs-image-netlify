@@ -12,31 +12,40 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
+      <main className={`${styles.main} bg-white text-black`}>
         <div className="flex flex-row space-x-4">
-          <div className="flex flex-col">
+          <div className="flex flex-col space-y-5">
             Image with tailwind wrapper
-            <div>
-              Image 1
-              <Image
-                src={
-                  "https://firebasestorage.googleapis.com/v0/b/vent-d1d85.appspot.com/o/eventsPics%2FupcomingEvent1.jpg?alt=media&token=10198312-383d-4eef-af93-1f42671a17ff"
-                }
-                loading="lazy"
-                width={384}
-                height={384}
-              />
+            <div className="h-[460px] w-full max-w-[320px] cursor-pointer bg-sky-100 rounded-3xl  sm:h-[524px] sm:w-[380px] sm:max-w-[380px]">
+              <div className="relative h-[384px] max-h-[320px] w-full max-w-[380px]">
+                <Image
+                  src={
+                    "https://firebasestorage.googleapis.com/v0/b/vent-d1d85.appspot.com/o/eventsPics%2FupcomingEvent1.jpg?alt=media&token=10198312-383d-4eef-af93-1f42671a17ff"
+                  }
+                  loading="eager"
+                  objectFit="cover"
+                  layout="fill"
+                />
+              </div>
+              Tailwind values: 
+              <br />
+              Image values = {`{loading:lazy; objectFit:cover; layout:fill}`}
             </div>
-            <div>
-              Image 2
-              <Image
-                src={
-                  "https://firebasestorage.googleapis.com/v0/b/vent-d1d85.appspot.com/o/eventsPics%2FupcomingEvent2.jpg?alt=media&token=6830d9a3-c32b-4f38-b2c4-96cec4011236"
-                }
-                loading="lazy"
-                width={384}
-                height={384}
-              />
+            <div className="h-[460px] w-full max-w-[320px] cursor-pointer bg-sky-100 rounded-3xl  sm:h-[524px] sm:w-[380px] sm:max-w-[380px]">
+              <div className="relative h-[384px] w-[384px]">
+                Image 2
+                <Image
+                  src={
+                    "https://firebasestorage.googleapis.com/v0/b/vent-d1d85.appspot.com/o/eventsPics%2FupcomingEvent2.jpg?alt=media&token=6830d9a3-c32b-4f38-b2c4-96cec4011236"
+                  }
+                  loading="eager"
+                  objectFit="cover"
+                  layout="fill"
+                />
+              </div>
+              Tailwind values = {''} 
+              <br />
+              Image values = {`{loading:lazy; objectFit:cover; layout:fill}`}
             </div>
           </div>
           <div className="flex flex-col">
@@ -47,7 +56,7 @@ const Home: NextPage = () => {
                 src={
                   "https://firebasestorage.googleapis.com/v0/b/vent-d1d85.appspot.com/o/eventsPics%2FupcomingEvent3.jpg?alt=media&token=f0bfdf4f-73b1-4ba8-a1cb-af503b5a0829"
                 }
-                loading="lazy"
+                loading="eager"
                 width={384}
                 height={384}
               />
@@ -58,7 +67,7 @@ const Home: NextPage = () => {
                 src={
                   "https://firebasestorage.googleapis.com/v0/b/vent-d1d85.appspot.com/o/eventsPics%2FupcomingEvent4.jpg?alt=media&token=9bae0760-9424-49c1-903e-bb357d111a60"
                 }
-                loading="lazy"
+                loading="eager"
                 width={384}
                 height={384}
               />
