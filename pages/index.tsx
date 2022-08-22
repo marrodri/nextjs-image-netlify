@@ -1,7 +1,7 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import type { NextPage } from "next";
+import Head from "next/head";
+import Image from "next/image";
+import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
   return (
@@ -13,60 +13,57 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.tsx</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+        <div className="flex flex-row space-x-4">
+          <div className="flex flex-col">
+            Image with tailwind wrapper
+            <div>
+              Image 1
+              <Image
+                src={
+                  "https://firebasestorage.googleapis.com/v0/b/vent-d1d85.appspot.com/o/eventsPics%2FupcomingEvent1.jpg?alt=media&token=10198312-383d-4eef-af93-1f42671a17ff"
+                }
+                width={100}
+                height={100}
+              />
+            </div>
+            <div>
+              Image 2
+              <Image
+                src={
+                  "https://firebasestorage.googleapis.com/v0/b/vent-d1d85.appspot.com/o/eventsPics%2FupcomingEvent2.jpg?alt=media&token=6830d9a3-c32b-4f38-b2c4-96cec4011236"
+                }
+                width={100}
+                height={100}
+              />
+            </div>
+          </div>
+          <div className="flex flex-col">
+            Image without tailwind wrapper; but with Props value
+            <div>
+              Image 3
+              <Image
+                src={
+                  "https://firebasestorage.googleapis.com/v0/b/vent-d1d85.appspot.com/o/eventsPics%2FupcomingEvent3.jpg?alt=media&token=f0bfdf4f-73b1-4ba8-a1cb-af503b5a0829"
+                }
+                width={100}
+                height={100}
+              />
+            </div>
+            <div>
+              Image 4
+              <Image
+                src={
+                  "https://firebasestorage.googleapis.com/v0/b/vent-d1d85.appspot.com/o/eventsPics%2FupcomingEvent4.jpg?alt=media&token=9bae0760-9424-49c1-903e-bb357d111a60"
+                }
+                width={100}
+                height={100}
+              />
+            </div>
+          </div>
         </div>
       </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
