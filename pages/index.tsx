@@ -22,7 +22,7 @@ const Home: NextPage = () => {
                   src={
                     "https://firebasestorage.googleapis.com/v0/b/vent-d1d85.appspot.com/o/eventsPics%2FupcomingEvent1.jpg?alt=media&token=10198312-383d-4eef-af93-1f42671a17ff"
                   }
-                  loading="eager"
+                  loading="lazy"
                   objectFit="cover"
                   layout="fill"
                 />
@@ -38,7 +38,7 @@ const Home: NextPage = () => {
                   src={
                     "https://firebasestorage.googleapis.com/v0/b/vent-d1d85.appspot.com/o/eventsPics%2FupcomingEvent2.jpg?alt=media&token=6830d9a3-c32b-4f38-b2c4-96cec4011236"
                   }
-                  loading="eager"
+                  loading="lazy"
                   objectFit="cover"
                   layout="fill"
                 />
@@ -56,7 +56,7 @@ const Home: NextPage = () => {
                 src={
                   "https://firebasestorage.googleapis.com/v0/b/vent-d1d85.appspot.com/o/eventsPics%2FupcomingEvent3.jpg?alt=media&token=f0bfdf4f-73b1-4ba8-a1cb-af503b5a0829"
                 }
-                loading="eager"
+                loading="lazy"
                 width={384}
                 height={384}
               />
@@ -67,7 +67,7 @@ const Home: NextPage = () => {
                 src={
                   "https://firebasestorage.googleapis.com/v0/b/vent-d1d85.appspot.com/o/eventsPics%2FupcomingEvent4.jpg?alt=media&token=9bae0760-9424-49c1-903e-bb357d111a60"
                 }
-                loading="eager"
+                loading="lazy"
                 width={384}
                 height={384}
               />
