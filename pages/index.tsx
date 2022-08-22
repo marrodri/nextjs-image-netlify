@@ -16,8 +16,8 @@ const Home: NextPage = () => {
         <div className="flex flex-row space-x-4">
           <div className="flex flex-col space-y-5">
             Image with tailwind wrapper
-            <div className="h-[460px] w-full max-w-[320px] cursor-pointer bg-sky-100 rounded-3xl  sm:h-[524px] sm:w-[380px] sm:max-w-[380px]">
-              <div className="relative h-[384px] max-h-[320px] w-full max-w-[380px]">
+            <div className="h-[460px] w-full max-w-[320px]  cursor-pointer bg-sky-100 rounded-3xl rounded-3xl  sm:h-[524px] sm:w-[380px] sm:max-w-[380px]">
+              <div className="relative h-[384px] max-h-[320px]  rounded-3xl w-full max-w-[380px]">
                 <Image
                   src={
                     "https://firebasestorage.googleapis.com/v0/b/vent-d1d85.appspot.com/o/eventsPics%2FupcomingEvent1.jpg?alt=media&token=10198312-383d-4eef-af93-1f42671a17ff"
@@ -25,14 +25,15 @@ const Home: NextPage = () => {
                   loading="eager"
                   objectFit="cover"
                   layout="fill"
+                  className="rounded-3xl"
                 />
               </div>
               Tailwind values: 
               <br />
               Image values = {`{loading:lazy; objectFit:cover; layout:fill}`}
             </div>
-            <div className="h-[460px] w-full max-w-[320px] cursor-pointer bg-sky-100 rounded-3xl  sm:h-[524px] sm:w-[380px] sm:max-w-[380px]">
-              <div className="relative h-[384px] w-[384px]">
+            <div className="h-[460px] w-full max-w-[320px] cursor-pointer bg-sky-100  rounded-3xl sm:h-[524px] sm:w-[380px] sm:max-w-[380px]">
+              <div className="relative h-[384px] max-h-[320px]   w-full max-w-[380px]">
                 Image 2
                 <Image
                   src={
@@ -41,6 +42,7 @@ const Home: NextPage = () => {
                   loading="eager"
                   objectFit="cover"
                   layout="fill"
+                  className="rounded-3xl"
                 />
               </div>
               Tailwind values = {''} 
@@ -59,6 +61,7 @@ const Home: NextPage = () => {
                 loading="eager"
                 width={384}
                 height={384}
+                className="rounded-3xl"
               />
             </div>
             <div>
@@ -70,6 +73,7 @@ const Home: NextPage = () => {
                 loading="eager"
                 width={384}
                 height={384}
+                className="rounded-3xl"
               />
             </div>
           </div>
