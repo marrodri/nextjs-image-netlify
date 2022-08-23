@@ -15,7 +15,7 @@ const Home: NextPage = () => {
       <main className={`${styles.main} bg-white text-black`}>
         <div className="flex flex-row space-x-4">
           <div className="flex flex-col space-y-5">
-            Image with tailwind wrapper
+            Image nextjs
             <div className="h-[460px] w-full max-w-[320px] cursor-pointer bg-sky-100 rounded-3xl  sm:h-[524px] sm:w-[380px] sm:max-w-[380px]">
               <div className="relative h-[384px] max-h-[320px] w-full max-w-[380px]">
                 <Image
@@ -27,7 +27,7 @@ const Home: NextPage = () => {
                   layout="fill"
                 />
               </div>
-              Tailwind values: 
+              Tailwind values:
               <br />
               Image values = {`{loading:lazy; objectFit:cover; layout:fill}`}
             </div>
@@ -43,33 +43,29 @@ const Home: NextPage = () => {
                   layout="fill"
                 />
               </div>
-              Tailwind values = {''} 
+              Tailwind values = {""}
               <br />
               Image values = {`{loading:lazy; objectFit:cover; layout:fill}`}
             </div>
           </div>
           <div className="flex flex-col">
-            Image without tailwind wrapper; but with Props value
-            <div>
+            img component
+            <div className="w-[384px] h-[384px]">
               Image 3
-              <Image
+              <img
                 src={
                   "https://firebasestorage.googleapis.com/v0/b/vent-d1d85.appspot.com/o/eventsPics%2FupcomingEvent3.jpg?alt=media&token=f0bfdf4f-73b1-4ba8-a1cb-af503b5a0829"
                 }
-                loading="eager"
-                width={384}
-                height={384}
+                className="w-full h-full"
               />
             </div>
-            <div>
+            <div className="w-[384px] h-[384px]">
               Image 4
-              <Image
+              <img
                 src={
                   "https://firebasestorage.googleapis.com/v0/b/vent-d1d85.appspot.com/o/eventsPics%2FupcomingEvent4.jpg?alt=media&token=9bae0760-9424-49c1-903e-bb357d111a60"
                 }
-                loading="eager"
-                width={384}
-                height={384}
+                className="w-full h-full"
               />
             </div>
           </div>
