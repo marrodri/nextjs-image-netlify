@@ -1,7 +1,7 @@
-
-
-[[plugins]]
-package = "netlify-plugin-cloudinary"
-
-[plugin.inputs]
-cloudName = 'dcj8bpnvr'
+#
+#
+#[[plugins]]
+#package = "netlify-plugin-cloudinary"
+#
+#[plugin.inputs]
+#cloudName = 'dcj8bpnvr'
