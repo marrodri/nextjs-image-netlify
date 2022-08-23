@@ -54,7 +54,8 @@ const Home: NextPage = () => {
               Image 3
               <img
                 src={
-                  "https://firebasestorage.googleapis.com/v0/b/vent-d1d85.appspot.com/o/eventsPics%2FupcomingEvent3.jpg?alt=media&token=f0bfdf4f-73b1-4ba8-a1cb-af503b5a0829"
+                  "https://res.cloudinary.com/dcj8bpnvr/image/upload/v1661134810/past_events/pastEvent5_qt4kz7.jpg"
+                  // "https://firebasestorage.googleapis.com/v0/b/vent-d1d85.appspot.com/o/eventsPics%2FupcomingEvent3.jpg?alt=media&token=f0bfdf4f-73b1-4ba8-a1cb-af503b5a0829"
                 }
                 className="w-full h-full"
               />
@@ -63,7 +64,8 @@ const Home: NextPage = () => {
               Image 4
               <img
                 src={
-                  "https://firebasestorage.googleapis.com/v0/b/vent-d1d85.appspot.com/o/eventsPics%2FupcomingEvent4.jpg?alt=media&token=9bae0760-9424-49c1-903e-bb357d111a60"
+                  "https://res.cloudinary.com/dcj8bpnvr/image/upload/v1661134807/past_events/pastEvent2_lp3ile.jpg"
+                  // "https://firebasestorage.googleapis.com/v0/b/vent-d1d85.appspot.com/o/eventsPics%2FupcomingEvent4.jpg?alt=media&token=9bae0760-9424-49c1-903e-bb357d111a60"
                 }
                 className="w-full h-full"
               />
